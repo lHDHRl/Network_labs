@@ -6,30 +6,22 @@
         <title>Лаба 2</title>
         <style>
         .content {
-            width: 1200px;
+            width: 90%;
             background: green;
             overflow: hidden;
-        }
-
-        .wrapper {
-            min-width: 1200px;
             margin: 0 auto;
-            overflow: hidden;
         }
-
-        .block,
-        .space {
+        .block {
             float: left;
-            width: 330px;
+            width: calc((100% - 90px) / 3);
             margin: 15px;
             padding: 20px;
             background: white;
             font-size: 24px;
+            box-sizing: border-box;
         }
-
-        .space {
-            overflow: hidden;
-            background: green;
+        .wrapper-two .block1{
+            float: right;
         }
     </style>
     </head>
@@ -49,11 +41,12 @@
                     программистом
                     Джеймсом Гослингом
                 </div>
+            </div>
+            <div class="wrapper-two">
                 <div class="block"><strong>Javascript</strong> разработан в 1996
                     году, автор -
                     американский программист Брендан Айк</div>
-                <div class="space"></div>
-                <div class="block">
+                <div class="block block1">
                     <strong>Prolog</strong> разработан в 1972 году, автор -
                     французский
                     программист Ален Колмероэ
