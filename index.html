@@ -3,110 +3,174 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>task_1</title>
+        <title>task_2</title>
+        <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Лучшие книги только у нас</a>
+            </div>
+            <div class="menu">
+                <a href="index.html" class="menu-btn active">Главная
+                    страница</a>
+                <a href="table.html" class="menu-btn">Таблица книг</a>
+                <a href="#menu3" class="menu-btn">Меню 3</a>
+                <a href="#menu4" class="menu-btn">Меню 4</a>
+            </div>
+        </nav>
 
-        <a href="index.html">Топ лучших книг по программированию</a><br>
-        <a href="table.html">
-            Список самых лучших книг по программированию
-        </a>
-        <hr>
-        <a href="page1.html"><img
-                src="https://m.media-amazon.com/images/I/61cDxGe2YUL._UF1000,1000_QL80_.jpg"
-                alt="s"
-                width=112 height=112></a>
-        <a href="page2.html"><img
-                src="https://pages.cs.wisc.edu/~remzi/OSTEP/book-cover-two.jpg"
-                alt="s"
-                width=112 height=112></a>
-        <a href="page3.html"><img
-                src="https://i.vas3k.club/1c606847e430413db86865140a54158bb5976681b37798d8f7ebbbe51bba11d0.jpg"
-                alt="s"
-                width=112 height=112></a>
-        <a href="page4.html"><img
-                src="https://ir.ozone.ru/multimedia/c1000/1000092129.jpg"
-                alt="s"
-                width=112 height=112></a>
-        <a href="page5.html"><img
-                alt="s"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0TEPlOHNmFPBj_RBFJE0LP-ye0UVZcbR0eA&s"
-                width=112 height=112></a><
-        <hr>
-        <h2>
-            <img
-                src="https://m.media-amazon.com/images/I/61cDxGe2YUL._UF1000,1000_QL80_.jpg"
-                alt="s"
-                align=middle width=196 height=196>
-            <small>
-                Crafting Interpreters by Robert Nyrnstorm
-            </small>
-        </h2>
-        <p>
-            Несмотря на то что программисты пользуются языками
-            программирования каждый день, большинство из них мало знают о
-            том, как эти языки проектируются и реализуются. Для многих
-            единственным опытом в этой области информатики остаётся пугающий
-            курс «Компиляторы», который они каким-то образом пережили в
-            университете и постарались стереть из памяти сразу же после
-            того, как на выпускном экзамене написали последнее
-            преобразование недетерминированного конечного автомата (NFA) в
-            детерминированный (DFA).
-        </p>
-        <p>
-            Эта пугающая репутация скрывает за собой область, богатую
-            полезными методами и вовсе не столь сложную, какой её иногда
-            представляют её специалисты. Более глубокое понимание того, как
-            устроены языки программирования, сделает вас более сильным
-            программистом и познакомит вас с концепциями и структурами
-            данных, которые вы будете использовать на протяжении всей своей
-            карьеры. Возможно, вам даже понравится.
-        </p>
-        <h2>
-            <img
-                src="https://pages.cs.wisc.edu/~remzi/OSTEP/book-cover-two.jpg"
-                alt="s"
-                align=middle width=196 height=196>
-            <small>
-                Operating Systems: Three Easy Pieces by Remzi
-                H.Arpaci-Dusseau
-            </small>
-        </h2>
-        <p>
-            «Книга с кометой» (или OSTEP) — итог почти 20 лет преподавания
-            курса «Введение в операционные системы» для студентов и
-            магистрантов на факультете компьютерных наук Висконсинского
-            университета.
-        </p>
-        <p>
-            В книге рассматриваются три фундаментальные концепции
-            операционных систем:
-        </p>
-        <ol>
-            <li>Виртуализация(процессора и памяти)</li>
-            <li>Конкурентность(блокировки и условные переменные)</li>
-            <li>Долговременное хранение(диски, RAID-массивы, файловые
-                системы).</li>
-        </ol>
-        <h2>
-            <img
-                src="https://i.vas3k.club/1c606847e430413db86865140a54158bb5976681b37798d8f7ebbbe51bba11d0.jpg"
-                alt="s"
-                align=middle width=196 height=196>
-            <small>
-                Designing Data-Intensive Applications by Martin Kleppmann
-            </small>
-        </h2>
-        <p>
-            В этой книге вы найдете ключевые принципы, алгоритмы и
-            компромиссы, без которых не обойтись при разработке
-            высоконагруженных систем для работы с данными. Материал
-            рассматривается на примере внутреннего устройства популярных
-            программных пакетов и фреймворков. В книге три основные части,
-            посвященные, прежде всего, теоретическим аспектам работы с
-            распределенными системами и базами данных. От читателя требуются
-            базовые знания SQL и принципов работы баз данных.
-        </p>
+        <div class="album">
+            <div class="left-column">
+                <a href="page1.html" class="album-item large-left">
+                    <img src="images/Robert_Nyrnstorm.jpg"
+                        alt="Robert Nyrnstorm">
+                </a>
+                <div class="bottom-row">
+                    <a href="page2.html" class="album-item small image1">
+                        <img src="images/Three_Easy_Pieces.jpg"
+                            alt="Three Easy Pieces">
+                    </a>
+                    <a href="page3.html" class="album-item small image2">
+                        <img src="images/Designing_Data_Apps.jpg"
+                            alt="Designing Data-Intensive Applications">
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <a href="page4.html" class="album-item large-right">
+                    <img src="images/TCP_IP.jpg" alt="TCP/IP">
+                </a>
+            </div>
+        </div>
+
+        <div class="first-heading">
+            <h2>
+                <small>
+                    Crafting Interpreters by Robert Nyrnstorm
+                </small>
+            </h2>
+            <p class="p-right">
+                Несмотря на то что программисты пользуются языками
+                программирования каждый день, большинство из них мало знают о
+                том, как эти языки проектируются и реализуются. Для многих
+                единственным опытом в этой области информатики остаётся пугающий
+                курс «Компиляторы», который они каким-то образом пережили в
+                университете и постарались стереть из памяти сразу же после
+                того, как на выпускном экзамене написали последнее
+                преобразование недетерминированного конечного автомата (NFA) в
+                детерминированный (DFA).
+                <br>
+                Эта пугающая репутация скрывает за собой область, богатую
+                полезными методами и вовсе не столь сложную, какой её иногда
+                представляют её специалисты. Более глубокое понимание того, как
+                устроены языки программирования, сделает вас более сильным
+                программистом и познакомит вас с концепциями и структурами
+                данных, которые вы будете использовать на протяжении всей своей
+                карьеры. Возможно, вам даже понравится.
+            </p>
+            <div class="button-container">
+                <button>Подробнее>></button>
+            </div>
+        </div>
+        <div class="second-heading">
+            <h2>
+                <small>
+                    Operating Systems: Three Easy Pieces by Remzi
+                    H.Arpaci-Dusseau
+                </small>
+            </h2>
+            <div class="text-wrapper">
+                <p>
+                    «Книга с кометой» (или OSTEP) — итог почти 20 лет
+                    преподавания
+                    курса «Введение в операционные системы» для студентов и
+                    магистрантов на факультете компьютерных наук Висконсинского
+                    университета.
+                </p>
+                <p>
+                    В книге рассматриваются три фундаментальные концепции
+                    операционных систем:
+                </p>
+                <ol>
+                    <li>Виртуализация(процессора и памяти)</li>
+                    <li>Конкурентность(блокировки и условные переменные)</li>
+                    <li>Долговременное хранение(диски, RAID-массивы, файловые
+                        системы).</li>
+                </ol>
+                <a href="#" class="button-container">Подробнее>></a>
+            </div>
+            <img class="right-image"
+                src="images/Three_Easy_Pieces.jpg"
+                alt="Three Easy Pieces"
+                width=196 height=196>
+        </div>
+        <div class="row">
+            <div class="row-item">
+                <h3>Programming Book</h3>
+                <p>Книга по программированию. Подробное руководство по основам
+                    разработки программного обеспечения.</p>
+                <img
+                    src="images/Robert_Nyrnstorm.jpg"
+                    alt="Programming Book"
+                    width=196 height=196>
+                <a href="#">Подробнее>></a>
+            </div>
+            <div class="row-item">
+                <img
+                    src="images/Robert_Nyrnstorm.jpg"
+                    alt="Programming Book"
+                    width=196 height=196>
+                <h3>Programming Book</h3>
+                <p>Книга по программированию. Подробное руководство по основам
+                    разработки программного обеспечения.</p>
+                <a href="#">Подробнее>></a>
+            </div>
+            <div class="row-item">
+                <h3>Programming Book</h3>
+                <p>Книга по программированию. Подробное руководство по основам
+                    разработки программного обеспечения.</p>
+                <img
+                    src="images/Robert_Nyrnstorm.jpg"
+                    alt="Programming Book"
+                    width=196 height=196>
+                <a href="#">Подробнее>></a>
+            </div>
+        </div>
+        <div class="headings-row">
+            <div class="fourth-heading">
+                <div class="content-wrapper">
+                    <h4>
+                        <small>Operating Systems: Three Easy Pieces by Remzi H.
+                            Arpaci-Dusseau</small>
+                    </h4>
+                    <p>«Книга с кометой» — итог почти 20 лет преподавания...</p>
+                    <p>В книге рассматриваются три фундаментальные
+                        концепции:</p>
+                    <div class="button-container">
+                        <a href="#" class="more-link">Подробнее>></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="third-heading">
+                <img class="book-cover" src="images/Robert_Nyrnstorm.jpg"
+                    alt="Crafting Interpreters" width="196" height="196">
+                <div class="content-wrapper">
+                    <h3>
+                        <small>Crafting Interpreters by Robert Nystrom</small>
+                    </h3>
+                    <p class="book-description">
+                        Несмотря на то что программисты пользуются языками
+                        программирования каждый день...
+                    </p>
+                    <div class="button-container">
+                        <a href="#" class="more-link">Подробнее>></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr>
         <footer>
             <p>Разработчик: Жизнев Вадим Евгеньевич</p>

@@ -1,393 +1,393 @@
 <!DOCTYPE html>
 <html lang="ru">
-        <head>
-                <meta charset="UTF-8">
-                <meta name="viewport"
-                        content="width=device-width, initial-scale=1.0">
-                <title>Список книг по программированию</title>
-        </head>
-        <body>
-                <a href="index.html">Топ лучших книг по
-                        программированию</a><br>
-                <a href="table.html">Список самых лучших книг по
-                        программированию</a>
-                <hr>
-                <details>
-                        <summary>График продаж</summary>
-                        <strong>Ось X
-                                (категория)</strong>
-                        <strong>Ось Y
-                                (значение)</strong>
-                        <br>
-                        <input type="radio"
-                                name="graph-axis"
-                                id="theme">
-                        Тема
-                        <input type="checkbox" name="graph-yaxis" id="graph">
-                        Количество
-                        продаж
-                        <br>
-                        <input type="radio"
-                                name="graph-axis"
-                                id="country">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<title>Список книг по программированию</title>
+	</head>
+	<body>
+		<a href="index.html">Топ лучших книг по
+			программированию</a><br>
+		<a href="table.html">Список самых лучших книг по
+			программированию</a>
+		<hr>
+		<details>
+			<summary>График продаж</summary>
+			<strong>Ось X
+				(категория)</strong>
+			<strong>Ось Y
+				(значение)</strong>
+			<br>
+			<input type="radio"
+				name="graph-axis"
+				id="theme">
+			Тема
+			<input type="checkbox" name="graph-yaxis" id="graph">
+			Количество
+			продаж
+			<br>
+			<input type="radio"
+				name="graph-axis"
+				id="country">
 
-                        Автор
-                        <input type="checkbox" name="graph-yaxis" id="graph">
-                        Общая
-                        выручка
-                        <br>
+			Автор
+			<input type="checkbox" name="graph-yaxis" id="graph">
+			Общая
+			выручка
+			<br>
 
-                        <input type="radio"
-                                name="graph-axis"
-                                id="year"> Год
-                        выпуска
-                        <input type="checkbox" name="graph-yaxis" id="graph">
-                        Средний
-                        рейтинг
-                        <br>
-                        <button>Построить график</button>
-                </details>
+			<input type="radio"
+				name="graph-axis"
+				id="year"> Год
+			выпуска
+			<input type="checkbox" name="graph-yaxis" id="graph">
+			Средний
+			рейтинг
+			<br>
+			<button>Построить график</button>
+		</details>
 
-                <details>
-                        <summary>Фильтр</summary>
-                        Категория Выбор<br>
-                        Название
-                        <input type="text" name="theme" id="theme"
-                                placeholder="Название..."><br>
-                        Тема
-                        <input type="text" name="theme" id="theme"
-                                placeholder="Тема..."><br>
-                        Уровень сложности
-                        <select>
-                                <option>Все</option>
-                                <option>Начинающий</option>
-                                <option>Средний</option>
-                                <option>Продвинутый</option>
-                        </select><br>
-                        Год издания
-                        <label>от</label>
-                        <input type="number"
-                                id="year"
-                                min="1980"
-                                max="2025"
-                                placeholder="1980">
-                        <label>до</label>
-                        <input type="number" id="year" min="1981" max="2025"
-                                placeholder="2020">
-                        <br>
-                        Автор
-                        <input type="text" name="theme" id="theme"
-                                placeholder="Автор..."><br>
-                        Цена
-                        <labe>от</labe>
-                        <input type="number"
-                                min="1"
-                                id="price"
-                                placeholder="1">
-                        <label>до</label>
-                        <input type="number" max="9999" id="price"
-                                placeholder="9999">
-                        <br>
+		<details>
+			<summary>Фильтр</summary>
+			Категория Выбор<br>
+			Название
+			<input type="text" name="theme" id="theme"
+				placeholder="Название..."><br>
+			Тема
+			<input type="text" name="theme" id="theme"
+				placeholder="Тема..."><br>
+			Уровень сложности
+			<select>
+				<option>Все</option>
+				<option>Начинающий</option>
+				<option>Средний</option>
+				<option>Продвинутый</option>
+			</select><br>
+			Год издания
+			<label>от</label>
+			<input type="number"
+				id="year"
+				min="1980"
+				max="2025"
+				placeholder="1980">
+			<label>до</label>
+			<input type="number" id="year" min="1981" max="2025"
+				placeholder="2020">
+			<br>
+			Автор
+			<input type="text" name="theme" id="theme"
+				placeholder="Автор..."><br>
+			Цена
+			<labe>от</labe>
+			<input type="number"
+				min="1"
+				id="price"
+				placeholder="1">
+			<label>до</label>
+			<input type="number" max="9999" id="price"
+				placeholder="9999">
+			<br>
 
-                        <button>Применить фильтр</button>
-                </details>
+			<button>Применить фильтр</button>
+		</details>
 
-                <details>
-                        <summary>Сортировка</summary>
-                        <strong>Первый
-                                уровень</strong>
+		<details>
+			<summary>Сортировка</summary>
+			<strong>Первый
+				уровень</strong>
 
-                        <select>
-                                <option>Нет</option>
-                                <option>Название</option>
-                                <option>Автор</option>
-                                <option>Год
-                                        издания</option>
-                                <option>Тема</option>
-                                <option>Цена</option>
-                                <option>Уровень</option>
-                        </select>
+			<select>
+				<option>Нет</option>
+				<option>Название</option>
+				<option>Автор</option>
+				<option>Год
+					издания</option>
+				<option>Тема</option>
+				<option>Цена</option>
+				<option>Уровень</option>
+			</select>
 
-                        <select>
-                                <option>по
-                                        убыванию</option>
-                                <option>по
-                                        возрастанию</option>
-                        </select>
-                        <br>
-                        <strong>Второй
-                                уровень</strong>
+			<select>
+				<option>по
+					убыванию</option>
+				<option>по
+					возрастанию</option>
+			</select>
+			<br>
+			<strong>Второй
+				уровень</strong>
 
-                        <select>
-                                <option>Нет</option>
-                                <option>Название</option>
-                                <option>Автор</option>
-                                <option>Год
-                                        издания</option>
-                                <option>Тема</option>
-                                <option>Цена</option>
-                                <option>Уровень</option>
-                        </select>
+			<select>
+				<option>Нет</option>
+				<option>Название</option>
+				<option>Автор</option>
+				<option>Год
+					издания</option>
+				<option>Тема</option>
+				<option>Цена</option>
+				<option>Уровень</option>
+			</select>
 
-                        <select>
-                                <option>по
-                                        убыванию</option>
-                                <option>по
-                                        возрастанию</option>
-                        </select>
-                        <br>
-                        <strong>Третий
-                                уровень</strong>
-                        <select>
-                                <option>Нет</option>
-                                <option>Название</option>
-                                <option>Автор</option>
-                                <option>Год
-                                        издания</option>
-                                <option>Тема</option>
-                                <option>Цена</option>
-                                <option>Уровень</option>
-                        </select>
+			<select>
+				<option>по
+					убыванию</option>
+				<option>по
+					возрастанию</option>
+			</select>
+			<br>
+			<strong>Третий
+				уровень</strong>
+			<select>
+				<option>Нет</option>
+				<option>Название</option>
+				<option>Автор</option>
+				<option>Год
+					издания</option>
+				<option>Тема</option>
+				<option>Цена</option>
+				<option>Уровень</option>
+			</select>
 
-                        <select>
-                                <option>по
-                                        убыванию</option>
-                                <option>по
-                                        возрастанию</option>
-                        </select>
+			<select>
+				<option>по
+					убыванию</option>
+				<option>по
+					возрастанию</option>
+			</select>
 
-                        <br>
-                        <button>Сортировать</button>
-                </details>
-                <br>
-                <table border="1" cellpadding="8" cellspacing="0">
-                        <thead>
-                                <tr>
-                                        <th>Название книги</th>
-                                        <th>Автор</th>
-                                        <th>Год</th>
-                                        <th>Тема</th>
-                                        <th>Цена, ₽</th>
-                                        <th>Уровень</th>
-                                </tr>
-                        </thead>
-                        <tbody>
-                                <tr><td>Clean Code</td><td>Robert C.
-                                                Martin</td><td>2008</td><td>Архитектура
-                                                и чистота
-                                                кода</td><td>4200</td><td>Средний</td></tr>
-                                <tr>
-                                        <td>The Pragmatic
-                                                Programmer</td><td>Andrew
-                                                Hunt, David
-                                                Thomas</td><td>1999</td><td>Практическое
-                                                программирование</td><td>3800</td><td>Средний</td>
-                                </tr>
-                                <tr><td>Introduction to
-                                                Algorithms</td><td>Cormen,
-                                                Leiserson, Rivest,
-                                                Stein</td><td>2009</td><td>Алгоритмы</td><td>7900</td><td>Продвинутый</td></tr>
-                                <tr><td>Python Crash Course</td><td>Eric
-                                                Matthes</td><td>2015</td><td>Python</td><td>3200</td><td>Начинающий</td></tr>
-                                <tr><td>Eloquent
-                                                JavaScript</td><td>Marijn
-                                                Haverbeke</td><td>2011</td><td>JavaScript</td><td>2800</td><td>Начинающий</td></tr>
-                                <tr><td>Design Patterns</td><td>Gamma,
-                                                Helm, Johnson,
-                                                Vlissides</td><td>1994</td><td>Паттерны
-                                                проектирования</td><td>5600</td><td>Продвинутый</td></tr>
-                                <tr><td>Head First Java</td><td>Kathy
-                                                Sierra, Bert
-                                                Bates</td><td>2003</td><td>Java</td><td>4700</td><td>Начинающий</td></tr>
-                                <tr><td>You Don't Know JS</td><td>Kyle
-                                                Simpson</td><td>2014</td><td>JavaScript</td><td>0</td><td>Средний</td></tr>
-                                <tr><td>Cracking the Coding
-                                                Interview</td><td>Gayle
-                                                Laakmann
-                                                McDowell</td><td>2015</td><td>Подготовка
-                                                к
-                                                собеседованиям</td><td>3900</td><td>Средний</td></tr>
-                                <tr><td>Effective Java</td><td>Joshua
-                                                Bloch</td><td>2018</td><td>Java</td><td>5200</td><td>Продвинутый</td></tr>
-                                <tr><td>Automate the Boring Stuff with
-                                                Python</td><td>Al
-                                                Sweigart</td><td>2015</td><td>Python</td><td>2900</td><td>Начинающий</td></tr>
-                                <tr><td>Structure and Interpretation of
-                                                Computer
-                                                Programs</td><td>Abelson,
-                                                Sussman</td><td>1996</td><td>Основы
-                                                CS</td><td>6100</td><td>Продвинутый</td></tr>
-                                <tr><td>Learning Python</td><td>Mark
-                                                Lutz</td><td>2013</td><td>Python</td><td>6600</td><td>Средний</td></tr>
-                                <tr><td>JavaScript: The Good
-                                                Parts</td><td>Douglas
-                                                Crockford</td><td>2008</td><td>JavaScript</td><td>3300</td><td>Средний</td></tr>
-                                <tr><td>Refactoring</td><td>Martin
-                                                Fowler</td><td>2018</td><td>Рефакторинг
-                                                кода</td><td>4800</td><td>Средний</td></tr>
-                                <tr><td>Deep
-                                                Learning</td><td>Goodfellow,
-                                                Bengio,
-                                                Courville</td><td>2016</td><td>Искусственный
-                                                интеллект</td><td>8400</td><td>Продвинутый</td></tr>
-                                <tr><td>Programming Rust</td><td>Jim
-                                                Blandy, Jason
-                                                Orendorff</td><td>2021</td><td>Rust</td><td>5200</td><td>Средний</td></tr>
-                                <tr><td>Go in Action</td><td>William
-                                                Kennedy et
-                                                al.</td><td>2016</td><td>Go</td><td>4300</td><td>Средний</td></tr>
-                                <tr><td>Fluent Python</td><td>Luciano
-                                                Ramalho</td><td>2015</td><td>Python</td><td>5700</td><td>Продвинутый</td></tr>
-                                <tr><td>The Art of Computer
-                                                Programming</td><td>Donald
-                                                Knuth</td><td>1968</td><td>Алгоритмы</td><td>11200</td><td>Продвинутый</td></tr>
-                                <tr><td>Test-Driven
-                                                Development</td><td>Kent
-                                                Beck</td><td>2002</td><td>Тестирование</td><td>4200</td><td>Средний</td></tr>
-                                <tr><td>Domain-Driven
-                                                Design</td><td>Eric
-                                                Evans</td><td>2003</td><td>Архитектура
-                                                ПО</td><td>6100</td><td>Продвинутый</td></tr>
-                                <tr><td>Programming Pearls</td><td>Jon
-                                                Bentley</td><td>1986</td><td>Алгоритмы
-                                                и
-                                                практика</td><td>3800</td><td>Средний</td></tr>
-                                <tr><td>Computer Networking: A Top-Down
-                                                Approach</td><td>Kurose,
-                                                Ross</td><td>2016</td><td>Сети</td><td>7000</td><td>Средний</td></tr>
-                                <tr><td>Operating System
-                                                Concepts</td><td>Silberschatz,
-                                                Galvin,
-                                                Gagne</td><td>2018</td><td>Операционные
-                                                системы</td><td>7500</td><td>Продвинутый</td></tr>
-                                <tr><td>Database System
-                                                Concepts</td><td>Silberschatz
-                                                et
-                                                al.</td><td>2019</td><td>Базы
-                                                данных</td><td>6500</td><td>Средний</td></tr>
-                                <tr><td>Practical Vim</td><td>Drew
-                                                Neil</td><td>2015</td><td>Редакторы
-                                                кода</td><td>3300</td><td>Средний</td></tr>
-                                <tr><td>Linux Command Line and Shell
-                                                Scripting</td><td>Richard
-                                                Blum</td><td>2019</td><td>Linux</td><td>3800</td><td>Начинающий</td></tr>
-                                <tr><td>GraphQL in Action</td><td>Samer
-                                                Buna</td><td>2021</td><td>API</td><td>4300</td><td>Средний</td></tr>
-                                <tr><td>React Up &
-                                                Running</td><td>Stoyan
-                                                Stefanov</td><td>2016</td><td>Frontend</td><td>3300</td><td>Начинающий</td></tr>
-                                <tr><td>Vue.js: Up and
-                                                Running</td><td>Callum
-                                                Macrae</td><td>2018</td><td>Frontend</td><td>2900</td><td>Начинающий</td></tr>
-                                <tr><td>Node.js Design
-                                                Patterns</td><td>Mario
-                                                Casciaro</td><td>2014</td><td>Backend</td><td>4800</td><td>Продвинутый</td></tr>
-                                <tr><td>Docker Deep Dive</td><td>Nigel
-                                                Poulton</td><td>2016</td><td>Контейнеризация</td><td>3800</td><td>Средний</td></tr>
-                                <tr><td>Kubernetes in
-                                                Action</td><td>Marko
-                                                Luksa</td><td>2017</td><td>Оркестрация</td><td>5200</td><td>Продвинутый</td></tr>
-                                <tr><td>Terraform: Up &
-                                                Running</td><td>Yevgeniy
-                                                Brikman</td><td>2017</td><td>Инфраструктура
-                                                как
-                                                код</td><td>4300</td><td>Средний</td></tr>
-                                <tr><td>Site Reliability
-                                                Engineering</td><td>Google
-                                                SRE
-                                                Team</td><td>2016</td><td>DevOps</td><td>4800</td><td>Продвинутый</td></tr>
-                                <tr><td>Accelerate</td><td>Nicole
-                                                Forsgren et
-                                                al.</td><td>2018</td><td>DevOps
-                                                и
-                                                производительность</td><td>3300</td><td>Средний</td></tr>
-                                <tr><td>Think Like a
-                                                Programmer</td><td>V.
-                                                Anton
-                                                Spraul</td><td>2012</td><td>Логика
-                                                и решение
-                                                задач</td><td>2800</td><td>Начинающий</td></tr>
-                                <tr><td>Code Complete</td><td>Steve
-                                                McConnell</td><td>2004</td><td>Практика
-                                                программирования</td><td>5700</td><td>Средний</td></tr>
-                                <tr><td>The Mythical
-                                                Man-Month</td><td>Fred
-                                                Brooks</td><td>1975</td><td>Управление
-                                                проектами</td><td>3800</td><td>Средний</td></tr>
-                                <tr><td>Peopleware</td><td>Tom DeMarco,
-                                                Timothy
-                                                Lister</td><td>1987</td><td>Командная
-                                                работа</td><td>3300</td><td>Средний</td></tr>
-                                <tr><td>Algorithms
-                                                Unlocked</td><td>Thomas
-                                                Cormen</td><td>2013</td><td>Алгоритмы</td><td>2800</td><td>Начинающий</td></tr>
-                                <tr><td>Programming in C</td><td>Stephen
-                                                Kochan</td><td>2014</td><td>C</td><td>4200</td><td>Начинающий</td></tr>
-                                <tr><td>C++ Primer</td><td>Stanley
-                                                Lippman</td><td>2012</td><td>C++</td><td>6600</td><td>Средний</td></tr>
-                                <tr><td>Programming: Principles and
-                                                Practice Using
-                                                C++</td><td>Bjarne
-                                                Stroustrup</td><td>2014</td><td>C++</td><td>6100</td><td>Начинающий</td></tr>
-                                <tr><td>Learning
-                                                JavaScript</td><td>Ethan
-                                                Brown</td><td>2016</td><td>JavaScript</td><td>3800</td><td>Начинающий</td></tr>
-                                <tr><td>Python Tricks</td><td>Dan
-                                                Bader</td><td>2017</td><td>Python</td><td>3300</td><td>Средний</td></tr>
-                                <tr><td>Serious Python</td><td>Julien
-                                                Danjou</td><td>2018</td><td>Python</td><td>4300</td><td>Продвинутый</td></tr>
-                                <tr><td>Machine Learning
-                                                Yearning</td><td>Andrew
-                                                Ng</td><td>2018</td><td>Машинное
-                                                обучение</td><td>0</td><td>Средний</td></tr>
-                                <tr><td>Hands-On Machine
-                                                Learning</td><td>Aurélien
-                                                Géron</td><td>2019</td><td>Машинное
-                                                обучение</td><td>5700</td><td>Продвинутый</td></tr>
-                                <tr><td>Computer Science
-                                                Distilled</td><td>Wladston
-                                                Ferreira
-                                                Filho</td><td>2017</td><td>Основы
-                                                CS</td><td>2400</td><td>Начинающий</td></tr>
-                                <tr><td>Programming Language
-                                                Pragmatics</td><td>Michael
-                                                Scott</td><td>2015</td><td>Языки
-                                                программирования</td><td>7900</td><td>Продвинутый</td></tr>
-                                <tr><td>Web Development with Node &
-                                                Express</td><td>Ethan
-                                                Brown</td><td>2014</td><td>Backend</td><td>3800</td><td>Средний</td></tr>
-                                <tr><td>Learning React</td><td>Alex
-                                                Banks, Eve
-                                                Porcello</td><td>2020</td><td>Frontend</td><td>4300</td><td>Начинающий</td></tr>
-                                <tr><td>Practical Statistics for Data
-                                                Scientists</td><td>Bruce
-                                                &
-                                                Gedeck</td><td>2020</td><td>Статистика</td><td>4800</td><td>Средний</td></tr>
-                                <tr><td>Building
-                                                Microservices</td><td>Sam
-                                                Newman</td><td>2015</td><td>Архитектура</td><td>5200</td><td>Продвинутый</td></tr>
-                                <tr><td>Designing Data-Intensive
-                                                Applications</td><td>Martin
-                                                Kleppmann</td><td>2017</td><td>Архитектура
-                                                данных</td><td>6200</td><td>Продвинутый</td></tr>
-                                <tr><td>TCP/IP Illustrated, Volume
-                                                1</td><td>W. Richard
-                                                Stevens</td><td>1994</td><td>Сети</td><td>5800</td><td>Продвинутый</td></tr>
-                                <tr><td>C++: Полное
-                                                руководство</td><td>Герберт
-                                                Шилдт</td><td>2020</td><td>C++</td><td>4500</td><td>Средний</td></tr>
-                                <tr><td>Crafting
-                                                Interpreters</td><td>Robert
-                                                Nystrom</td><td>2021</td><td>Компиляторы
-                                                и
-                                                интерпретаторы</td><td>3000</td><td>Продвинутый</td></tr>
-                                <tr><td>Operating Systems: Three Easy
-                                                Pieces</td><td>Remzi
-                                                H. Arpaci-Dusseau,
-                                                Andrea C.
-                                                Arpaci-Dusseau</td><td>2018</td><td>Операционные
-                                                системы</td><td>0</td><td>Средний</td></tr>
-                        </tbody>
-                </table>
-        </body>
+			<br>
+			<button>Сортировать</button>
+		</details>
+		<br>
+		<table border="1" cellpadding="8" cellspacing="0">
+			<thead>
+				<tr>
+					<th>Название книги</th>
+					<th>Автор</th>
+					<th>Год</th>
+					<th>Тема</th>
+					<th>Цена, ₽</th>
+					<th>Уровень</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>Clean Code</td><td>Robert C.
+						Martin</td><td>2008</td><td>Архитектура
+						и чистота
+						кода</td><td>4200</td><td>Средний</td></tr>
+				<tr>
+					<td>The Pragmatic
+						Programmer</td><td>Andrew
+						Hunt, David
+						Thomas</td><td>1999</td><td>Практическое
+						программирование</td><td>3800</td><td>Средний</td>
+				</tr>
+				<tr><td>Introduction to
+						Algorithms</td><td>Cormen,
+						Leiserson, Rivest,
+						Stein</td><td>2009</td><td>Алгоритмы</td><td>7900</td><td>Продвинутый</td></tr>
+				<tr><td>Python Crash Course</td><td>Eric
+						Matthes</td><td>2015</td><td>Python</td><td>3200</td><td>Начинающий</td></tr>
+				<tr><td>Eloquent
+						JavaScript</td><td>Marijn
+						Haverbeke</td><td>2011</td><td>JavaScript</td><td>2800</td><td>Начинающий</td></tr>
+				<tr><td>Design Patterns</td><td>Gamma,
+						Helm, Johnson,
+						Vlissides</td><td>1994</td><td>Паттерны
+						проектирования</td><td>5600</td><td>Продвинутый</td></tr>
+				<tr><td>Head First Java</td><td>Kathy
+						Sierra, Bert
+						Bates</td><td>2003</td><td>Java</td><td>4700</td><td>Начинающий</td></tr>
+				<tr><td>You Don't Know JS</td><td>Kyle
+						Simpson</td><td>2014</td><td>JavaScript</td><td>0</td><td>Средний</td></tr>
+				<tr><td>Cracking the Coding
+						Interview</td><td>Gayle
+						Laakmann
+						McDowell</td><td>2015</td><td>Подготовка
+						к
+						собеседованиям</td><td>3900</td><td>Средний</td></tr>
+				<tr><td>Effective Java</td><td>Joshua
+						Bloch</td><td>2018</td><td>Java</td><td>5200</td><td>Продвинутый</td></tr>
+				<tr><td>Automate the Boring Stuff with
+						Python</td><td>Al
+						Sweigart</td><td>2015</td><td>Python</td><td>2900</td><td>Начинающий</td></tr>
+				<tr><td>Structure and Interpretation of
+						Computer
+						Programs</td><td>Abelson,
+						Sussman</td><td>1996</td><td>Основы
+						CS</td><td>6100</td><td>Продвинутый</td></tr>
+				<tr><td>Learning Python</td><td>Mark
+						Lutz</td><td>2013</td><td>Python</td><td>6600</td><td>Средний</td></tr>
+				<tr><td>JavaScript: The Good
+						Parts</td><td>Douglas
+						Crockford</td><td>2008</td><td>JavaScript</td><td>3300</td><td>Средний</td></tr>
+				<tr><td>Refactoring</td><td>Martin
+						Fowler</td><td>2018</td><td>Рефакторинг
+						кода</td><td>4800</td><td>Средний</td></tr>
+				<tr><td>Deep
+						Learning</td><td>Goodfellow,
+						Bengio,
+						Courville</td><td>2016</td><td>Искусственный
+						интеллект</td><td>8400</td><td>Продвинутый</td></tr>
+				<tr><td>Programming Rust</td><td>Jim
+						Blandy, Jason
+						Orendorff</td><td>2021</td><td>Rust</td><td>5200</td><td>Средний</td></tr>
+				<tr><td>Go in Action</td><td>William
+						Kennedy et
+						al.</td><td>2016</td><td>Go</td><td>4300</td><td>Средний</td></tr>
+				<tr><td>Fluent Python</td><td>Luciano
+						Ramalho</td><td>2015</td><td>Python</td><td>5700</td><td>Продвинутый</td></tr>
+				<tr><td>The Art of Computer
+						Programming</td><td>Donald
+						Knuth</td><td>1968</td><td>Алгоритмы</td><td>11200</td><td>Продвинутый</td></tr>
+				<tr><td>Test-Driven
+						Development</td><td>Kent
+						Beck</td><td>2002</td><td>Тестирование</td><td>4200</td><td>Средний</td></tr>
+				<tr><td>Domain-Driven
+						Design</td><td>Eric
+						Evans</td><td>2003</td><td>Архитектура
+						ПО</td><td>6100</td><td>Продвинутый</td></tr>
+				<tr><td>Programming Pearls</td><td>Jon
+						Bentley</td><td>1986</td><td>Алгоритмы
+						и
+						практика</td><td>3800</td><td>Средний</td></tr>
+				<tr><td>Computer Networking: A Top-Down
+						Approach</td><td>Kurose,
+						Ross</td><td>2016</td><td>Сети</td><td>7000</td><td>Средний</td></tr>
+				<tr><td>Operating System
+						Concepts</td><td>Silberschatz,
+						Galvin,
+						Gagne</td><td>2018</td><td>Операционные
+						системы</td><td>7500</td><td>Продвинутый</td></tr>
+				<tr><td>Database System
+						Concepts</td><td>Silberschatz
+						et
+						al.</td><td>2019</td><td>Базы
+						данных</td><td>6500</td><td>Средний</td></tr>
+				<tr><td>Practical Vim</td><td>Drew
+						Neil</td><td>2015</td><td>Редакторы
+						кода</td><td>3300</td><td>Средний</td></tr>
+				<tr><td>Linux Command Line and Shell
+						Scripting</td><td>Richard
+						Blum</td><td>2019</td><td>Linux</td><td>3800</td><td>Начинающий</td></tr>
+				<tr><td>GraphQL in Action</td><td>Samer
+						Buna</td><td>2021</td><td>API</td><td>4300</td><td>Средний</td></tr>
+				<tr><td>React Up &
+						Running</td><td>Stoyan
+						Stefanov</td><td>2016</td><td>Frontend</td><td>3300</td><td>Начинающий</td></tr>
+				<tr><td>Vue.js: Up and
+						Running</td><td>Callum
+						Macrae</td><td>2018</td><td>Frontend</td><td>2900</td><td>Начинающий</td></tr>
+				<tr><td>Node.js Design
+						Patterns</td><td>Mario
+						Casciaro</td><td>2014</td><td>Backend</td><td>4800</td><td>Продвинутый</td></tr>
+				<tr><td>Docker Deep Dive</td><td>Nigel
+						Poulton</td><td>2016</td><td>Контейнеризация</td><td>3800</td><td>Средний</td></tr>
+				<tr><td>Kubernetes in
+						Action</td><td>Marko
+						Luksa</td><td>2017</td><td>Оркестрация</td><td>5200</td><td>Продвинутый</td></tr>
+				<tr><td>Terraform: Up &
+						Running</td><td>Yevgeniy
+						Brikman</td><td>2017</td><td>Инфраструктура
+						как
+						код</td><td>4300</td><td>Средний</td></tr>
+				<tr><td>Site Reliability
+						Engineering</td><td>Google
+						SRE
+						Team</td><td>2016</td><td>DevOps</td><td>4800</td><td>Продвинутый</td></tr>
+				<tr><td>Accelerate</td><td>Nicole
+						Forsgren et
+						al.</td><td>2018</td><td>DevOps
+						и
+						производительность</td><td>3300</td><td>Средний</td></tr>
+				<tr><td>Think Like a
+						Programmer</td><td>V.
+						Anton
+						Spraul</td><td>2012</td><td>Логика
+						и решение
+						задач</td><td>2800</td><td>Начинающий</td></tr>
+				<tr><td>Code Complete</td><td>Steve
+						McConnell</td><td>2004</td><td>Практика
+						программирования</td><td>5700</td><td>Средний</td></tr>
+				<tr><td>The Mythical
+						Man-Month</td><td>Fred
+						Brooks</td><td>1975</td><td>Управление
+						проектами</td><td>3800</td><td>Средний</td></tr>
+				<tr><td>Peopleware</td><td>Tom DeMarco,
+						Timothy
+						Lister</td><td>1987</td><td>Командная
+						работа</td><td>3300</td><td>Средний</td></tr>
+				<tr><td>Algorithms
+						Unlocked</td><td>Thomas
+						Cormen</td><td>2013</td><td>Алгоритмы</td><td>2800</td><td>Начинающий</td></tr>
+				<tr><td>Programming in C</td><td>Stephen
+						Kochan</td><td>2014</td><td>C</td><td>4200</td><td>Начинающий</td></tr>
+				<tr><td>C++ Primer</td><td>Stanley
+						Lippman</td><td>2012</td><td>C++</td><td>6600</td><td>Средний</td></tr>
+				<tr><td>Programming: Principles and
+						Practice Using
+						C++</td><td>Bjarne
+						Stroustrup</td><td>2014</td><td>C++</td><td>6100</td><td>Начинающий</td></tr>
+				<tr><td>Learning
+						JavaScript</td><td>Ethan
+						Brown</td><td>2016</td><td>JavaScript</td><td>3800</td><td>Начинающий</td></tr>
+				<tr><td>Python Tricks</td><td>Dan
+						Bader</td><td>2017</td><td>Python</td><td>3300</td><td>Средний</td></tr>
+				<tr><td>Serious Python</td><td>Julien
+						Danjou</td><td>2018</td><td>Python</td><td>4300</td><td>Продвинутый</td></tr>
+				<tr><td>Machine Learning
+						Yearning</td><td>Andrew
+						Ng</td><td>2018</td><td>Машинное
+						обучение</td><td>0</td><td>Средний</td></tr>
+				<tr><td>Hands-On Machine
+						Learning</td><td>Aurélien
+						Géron</td><td>2019</td><td>Машинное
+						обучение</td><td>5700</td><td>Продвинутый</td></tr>
+				<tr><td>Computer Science
+						Distilled</td><td>Wladston
+						Ferreira
+						Filho</td><td>2017</td><td>Основы
+						CS</td><td>2400</td><td>Начинающий</td></tr>
+				<tr><td>Programming Language
+						Pragmatics</td><td>Michael
+						Scott</td><td>2015</td><td>Языки
+						программирования</td><td>7900</td><td>Продвинутый</td></tr>
+				<tr><td>Web Development with Node &
+						Express</td><td>Ethan
+						Brown</td><td>2014</td><td>Backend</td><td>3800</td><td>Средний</td></tr>
+				<tr><td>Learning React</td><td>Alex
+						Banks, Eve
+						Porcello</td><td>2020</td><td>Frontend</td><td>4300</td><td>Начинающий</td></tr>
+				<tr><td>Practical Statistics for Data
+						Scientists</td><td>Bruce
+						&
+						Gedeck</td><td>2020</td><td>Статистика</td><td>4800</td><td>Средний</td></tr>
+				<tr><td>Building
+						Microservices</td><td>Sam
+						Newman</td><td>2015</td><td>Архитектура</td><td>5200</td><td>Продвинутый</td></tr>
+				<tr><td>Designing Data-Intensive
+						Applications</td><td>Martin
+						Kleppmann</td><td>2017</td><td>Архитектура
+						данных</td><td>6200</td><td>Продвинутый</td></tr>
+				<tr><td>TCP/IP Illustrated, Volume
+						1</td><td>W. Richard
+						Stevens</td><td>1994</td><td>Сети</td><td>5800</td><td>Продвинутый</td></tr>
+				<tr><td>C++: Полное
+						руководство</td><td>Герберт
+						Шилдт</td><td>2020</td><td>C++</td><td>4500</td><td>Средний</td></tr>
+				<tr><td>Crafting
+						Interpreters</td><td>Robert
+						Nystrom</td><td>2021</td><td>Компиляторы
+						и
+						интерпретаторы</td><td>3000</td><td>Продвинутый</td></tr>
+				<tr><td>Operating Systems: Three Easy
+						Pieces</td><td>Remzi
+						H. Arpaci-Dusseau,
+						Andrea C.
+						Arpaci-Dusseau</td><td>2018</td><td>Операционные
+						системы</td><td>0</td><td>Средний</td></tr>
+			</tbody>
+		</table>
+	</body>
 </html>

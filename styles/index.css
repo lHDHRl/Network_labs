@@ -1,0 +1,226 @@
+.navbar {
+	display: block;
+	border: solid thin grey;
+	border-radius: 8px;
+	background-color: #f5f5f5;
+	padding: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.menu {
+	float: right;
+	color: black;
+}
+
+.menu-btn {
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.menu-btn:hover {
+	color: green;
+}
+
+.menu-btn.active {
+	color: green;
+	font-size: 20px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.album {
+	width: 90%;
+	max-width: 800px;
+	margin: 5px auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.left-column {
+	float: left;
+	width: 66%;
+	box-sizing: border-box;
+	padding-right: 5px;
+}
+
+.right-column {
+	float: right;
+	width: 33%;
+	box-sizing: border-box;
+}
+
+.album-item.large-left img {
+	width: 100%;
+	height: 200px;
+	display: block;
+}
+.album-item.large-right img {
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+.bottom-row {
+	overflow: hidden;
+}
+
+.album-item.small {
+	float: left;
+	width: 50%;
+	height: 200px;
+	box-sizing: border-box;
+	padding-top: 5px;
+}
+
+.album-item.small img {
+	width: 100%;
+	display: block;
+}
+
+.album-item.small.image1 img {
+	padding-right: 5px;
+}
+.album-item.small.image2 img {
+	padding-left: 5px;
+}
+
+.first-heading {
+	float: left;
+	width: 25%;
+	margin-right: 50px;
+	margin-left: 100px;
+}
+
+.button-container {
+	display: block;
+	float: right;
+}
+
+.button-container button {
+	display: block;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+.second-heading {
+	width: 90%;
+	max-width: 1000px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.second-heading > h2 {
+	float: left;
+	width: 20%;
+	margin-right: 15px;
+}
+
+.second-heading > .text-wrapper {
+	float: left;
+	width: 40%;
+	margin-right: 15px;
+	overflow: hidden;
+}
+
+.second-heading > .text-wrapper > p {
+	margin: 0;
+	display: block;
+}
+
+.second-heading > .right-image {
+	float: right;
+	width: 196px;
+	height: 196px;
+	margin-right: 150px;
+}
+
+.first-heading h2,
+.first-heading p,
+.second-heading h2,
+.second-heading .text-wrapper p {
+	margin: 0;
+}
+
+.second-heading {
+	width: 90%;
+	overflow: hidden;
+	margin: 0 auto 0 0;
+}
+
+.row {
+	overflow: hidden;
+	margin: 40px 0;
+}
+
+.row-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	text-align: center;
+}
+
+.row-item img {
+	width: 196px;
+	height: 196px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.row-item p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.headings-row {
+	overflow: hidden;
+}
+
+.third-heading,
+.fourth-heading {
+	float: right;
+	width: 35%;
+	margin-left: 2%;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+.headings-row .fourth-heading {
+	margin-left: 0;
+}
+
+.third-heading .book-cover,
+.fourth-heading .book-cover {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.third-heading .content-wrapper,
+.fourth-heading .content-wrapper {
+	overflow: hidden;
+	text-align: right;
+}
+
+.third-heading h3 {
+	float: left;
+	font-size: 1.2em;
+}
+.fourth-heading h4 {
+	font-size: 1.2em;
+}
